@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            background-color: gray;
+        }
+
+        .div1, .div2{
+            flex: 1;
+            background-color: red;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .div3{
+            flex: 2; /*Dobro do flex: 1*/
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .div4{
+            flex: 1;/*Distribui igualmente a largura */
+            background-color: green;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+
+    <div class="container">
+        <div class="div4">a</div>
+        <div class="div4">b</div>
+        <div class="div4">c</div>
+    </div>
+</body>
+</html>
